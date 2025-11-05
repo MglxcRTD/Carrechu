@@ -7,11 +7,11 @@ public class Cliente implements Runnable {
 
 	private long[] tiempos;
 	private int[] nclientes;
-	private Semaphore[] cajas;
+	private Semaphore caja;
 
-	public Cliente(Semaphore[] cajas, long[] tiempos, int[] nclientes) {
+	public Cliente(Semaphore caja) {
 
-		this.cajas = cajas;
+		this.caja = caja;
 		this.tiempos = tiempos;
 		this.nclientes = nclientes;
 	}
@@ -19,16 +19,16 @@ public class Cliente implements Runnable {
 	@Override
 	public void run() {
 		long tInicial = 0;
-		System.out.printf("Asignando caja a %s...%n", Thread.currentThread().getName());
-		Semaphore caja = this.cajas[new Random().nextInt(this.cajas.length)];
+		System.out.printf("Asignando caja  a %s...%n", Thread.currentThread().getName());
 
 		try {
 
-			caja.acquire();
-			tInicial = System.currentTimeMillis();
+			this.caja.acquire();
 
 			System.out.printf("%s: Realizando compra%n", Thread.currentThread().getName());
-			Thread.sleep(1000, 10000);
+			tInicial = System.currentTimeMillis();
+			Thread.sleep((long) (Math.random() * 20000));
+
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -36,9 +36,10 @@ public class Cliente implements Runnable {
 
 			long tFinal = System.currentTimeMillis();
 			long totaltiempo = tFinal - tInicial;
-			System.out.printf("%s atendido. Tiempo de espera: %d%n", Thread.currentThread().getName(), totaltiempo);
+			System.out.printf("%s atendido. Tiempo de espera: %d%n", Thread.currentThread().getName(),
+					(totaltiempo / 1000));
 			caja.release();
-			
+
 		}
 	}
 
