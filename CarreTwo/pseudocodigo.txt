@@ -1,0 +1,34 @@
+PSUDOCODIGO:
+
+cliente (maybe 2 contructores(?))
+
+multicaja:
+
+- llega hilo
+- se le añade a la cola clientes syso("cliente se puso en la cola con posicion (posicion de la cola)")
+- cuando el hilo este en la primera posicion de la cola se le atiende
+
+
+(comprobar si las colas no estan ocupadas, maybe semaphore(?))
+- se le asigna caja (nAleatorio 1/10)
+- realiza accion en caja
+- syso("cliente realizando compra")
+- al terminar, le hace pop de la cola
+- syso("el cliente x ha sido atendido, su tiempo de espera es (tiempo de espera)")
+- se notifica para que el siguiente hilo sea atendido
+
+unicaja:
+
+- llega hilo
+- se le añade a la cola clientes syso("cliente se puso en la cola con posicion (posicion de la cola)")
+- cuando el hilo este en la primera posicion de la cola se le atiende
+
+
+
+- si la caja esta libre el hilo se despierta 
+- realiza accion en caja
+- syso("cliente realizando compra")
+- al terminar, le hace pop de la cola
+- syso("el cliente x ha sido atendido, su tiempo de espera es (tiempo de espera)")
+- se notifica para que el siguiente hilo sea atendido
+ 
