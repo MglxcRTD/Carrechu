@@ -1,0 +1,460 @@
+====SIMULACION 1====
+===== CARRETWO =====
+
+Carretwo abre sus puertas...
+
+Preparando cajas...
+
+Asignando caja  a Cliente  1...
+Asignando caja  a Cliente  3...
+Asignando caja  a Cliente  2...
+Cliente  3 asignado a la caja 2
+Asignando caja  a Cliente  6...
+Asignando caja  a Cliente  7...
+Cliente  2 asignado a la caja 3
+Cliente  2: Realizando compra
+Cliente  1 asignado a la caja 1
+Cliente  1: Realizando compra
+Asignando caja  a Cliente  5...
+Cliente  3: Realizando compra
+Asignando caja  a Cliente  4...
+Cliente  6 asignado a la caja 4
+Cliente  6: Realizando compra
+Cliente  7 asignado a la caja 5
+Asignando caja  a Cliente  11...
+Asignando caja  a Cliente  9...
+Asignando caja  a Cliente  8...
+Asignando caja  a Cliente  10...
+Cliente  7: Realizando compra
+Asignando caja  a Cliente  12...
+Asignando caja  a Cliente  13...
+Asignando caja  a Cliente  14...
+Asignando caja  a Cliente  15...
+Asignando caja  a Cliente  17...
+Asignando caja  a Cliente  16...
+Asignando caja  a Cliente  18...
+Asignando caja  a Cliente  19...
+Asignando caja  a Cliente  20...
+Cliente  7 atendido en la caja 5. Tiempo de espera: 1 ms.
+Cliente  5 asignado a la caja 5
+Cliente  5: Realizando compra
+Cliente  6 atendido en la caja 4. Tiempo de espera: 3 ms.
+Cliente  4 asignado a la caja 4
+Cliente  4: Realizando compra
+Cliente  3 atendido en la caja 2. Tiempo de espera: 4 ms.
+Cliente  11 asignado a la caja 2
+Cliente  11: Realizando compra
+Cliente  4 atendido en la caja 4. Tiempo de espera: 1 ms.
+Cliente  9 asignado a la caja 4
+Cliente  9: Realizando compra
+Cliente  5 atendido en la caja 5. Tiempo de espera: 4 ms.
+Cliente  8 asignado a la caja 5
+Cliente  8: Realizando compra
+Cliente  1 atendido en la caja 1. Tiempo de espera: 7 ms.
+Cliente  10 asignado a la caja 1
+Cliente  10: Realizando compra
+Cliente  9 atendido en la caja 4. Tiempo de espera: 3 ms.
+Cliente  12 asignado a la caja 4
+Cliente  12: Realizando compra
+Cliente  12 atendido en la caja 4. Tiempo de espera: 0 ms.
+Cliente  13 asignado a la caja 4
+Cliente  13: Realizando compra
+Cliente  10 atendido en la caja 1. Tiempo de espera: 1 ms.
+Cliente  14 asignado a la caja 1
+Cliente  14: Realizando compra
+Cliente  8 atendido en la caja 5. Tiempo de espera: 2 ms.
+Cliente  15 asignado a la caja 5
+Cliente  15: Realizando compra
+Cliente  2 atendido en la caja 3. Tiempo de espera: 8 ms.
+Cliente  17 asignado a la caja 3
+Cliente  17: Realizando compra
+Cliente  14 atendido en la caja 1. Tiempo de espera: 2 ms.
+Cliente  16 asignado a la caja 1
+Cliente  16: Realizando compra
+Cliente  15 atendido en la caja 5. Tiempo de espera: 3 ms.
+Cliente  18 asignado a la caja 5
+Cliente  18: Realizando compra
+Cliente  11 atendido en la caja 2. Tiempo de espera: 7 ms.
+Cliente  19 asignado a la caja 2
+Cliente  19: Realizando compra
+Cliente  18 atendido en la caja 5. Tiempo de espera: 3 ms.
+Cliente  20 asignado a la caja 5
+Cliente  20: Realizando compra
+Cliente  13 atendido en la caja 4. Tiempo de espera: 7 ms.
+Cliente  20 atendido en la caja 5. Tiempo de espera: 1 ms.
+Cliente  16 atendido en la caja 1. Tiempo de espera: 6 ms.
+Cliente  17 atendido en la caja 3. Tiempo de espera: 8 ms.
+Cliente  19 atendido en la caja 2. Tiempo de espera: 7 ms.
+
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 4,30ms.
+Desviacion Tipica: 5,08ms.
+
+====SIMULACION 2====
+===== CARRETWO =====
+
+Carretwo abre sus puertas...
+
+Preparando cajas...
+
+Asignando caja  a Cliente  1...
+Asignando caja  a Cliente  2...
+Asignando caja  a Cliente  3...
+Asignando caja  a Cliente  7...
+Cliente  1 asignado a la caja 1
+Cliente  1: Realizando compra
+Asignando caja  a Cliente  4...
+Asignando caja  a Cliente  5...
+Cliente  2 asignado a la caja 2
+Cliente  2: Realizando compra
+Asignando caja  a Cliente  6...
+Cliente  3 asignado a la caja 3
+Cliente  3: Realizando compra
+Cliente  7 asignado a la caja 4
+Cliente  7: Realizando compra
+Asignando caja  a Cliente  8...
+Asignando caja  a Cliente  9...
+Cliente  4 asignado a la caja 5
+Cliente  4: Realizando compra
+Asignando caja  a Cliente  10...
+Asignando caja  a Cliente  11...
+Asignando caja  a Cliente  12...
+Asignando caja  a Cliente  13...
+Asignando caja  a Cliente  14...
+Asignando caja  a Cliente  15...
+Asignando caja  a Cliente  16...
+Asignando caja  a Cliente  17...
+Asignando caja  a Cliente  18...
+Asignando caja  a Cliente  19...
+Asignando caja  a Cliente  20...
+Cliente  4 atendido en la caja 5. Tiempo de espera: 1 ms.
+Cliente  5 asignado a la caja 5
+Cliente  5: Realizando compra
+Cliente  2 atendido en la caja 2. Tiempo de espera: 3 ms.
+Cliente  6 asignado a la caja 2
+Cliente  6: Realizando compra
+Cliente  3 atendido en la caja 3. Tiempo de espera: 3 ms.
+Cliente  8 asignado a la caja 3
+Cliente  8: Realizando compra
+Cliente  7 atendido en la caja 4. Tiempo de espera: 4 ms.
+Cliente  9 asignado a la caja 4
+Cliente  9: Realizando compra
+Cliente  5 atendido en la caja 5. Tiempo de espera: 4 ms.
+Cliente  10 asignado a la caja 5
+Cliente  10: Realizando compra
+Cliente  1 atendido en la caja 1. Tiempo de espera: 8 ms.
+Cliente  11 asignado a la caja 1
+Cliente  11: Realizando compra
+Cliente  9 atendido en la caja 4. Tiempo de espera: 4 ms.
+Cliente  12 asignado a la caja 4
+Cliente  12: Realizando compra
+Cliente  6 atendido en la caja 2. Tiempo de espera: 8 ms.
+Cliente  13 asignado a la caja 2
+Cliente  13: Realizando compra
+Cliente  13 atendido en la caja 2. Tiempo de espera: 0 ms.
+Cliente  14 asignado a la caja 2
+Cliente  14: Realizando compra
+Cliente  8 atendido en la caja 3. Tiempo de espera: 9 ms.
+Cliente  15 asignado a la caja 3
+Cliente  15: Realizando compra
+Cliente  11 atendido en la caja 1. Tiempo de espera: 5 ms.
+Cliente  16 asignado a la caja 1
+Cliente  16: Realizando compra
+Cliente  10 atendido en la caja 5. Tiempo de espera: 8 ms.
+Cliente  17 asignado a la caja 5
+Cliente  17: Realizando compra
+Cliente  16 atendido en la caja 1. Tiempo de espera: 0 ms.
+Cliente  18 asignado a la caja 1
+Cliente  18: Realizando compra
+Cliente  17 atendido en la caja 5. Tiempo de espera: 2 ms.
+Cliente  19 asignado a la caja 5
+Cliente  19: Realizando compra
+Cliente  12 atendido en la caja 4. Tiempo de espera: 8 ms.
+Cliente  20 asignado a la caja 4
+Cliente  20: Realizando compra
+Cliente  20 atendido en la caja 4. Tiempo de espera: 0 ms.
+Cliente  14 atendido en la caja 2. Tiempo de espera: 7 ms.
+Cliente  18 atendido en la caja 1. Tiempo de espera: 8 ms.
+Cliente  15 atendido en la caja 3. Tiempo de espera: 9 ms.
+Cliente  19 atendido en la caja 5. Tiempo de espera: 5 ms.
+
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 5,34ms.
+Desviacion Tipica: 6,09ms.
+
+====SIMULACION 3====
+===== CARRETWO =====
+
+Carretwo abre sus puertas...
+
+Preparando cajas...
+
+Asignando caja  a Cliente  1...
+Cliente  1 asignado a la caja 1
+Cliente  1: Realizando compra
+Asignando caja  a Cliente  2...
+Asignando caja  a Cliente  20...
+Asignando caja  a Cliente  9...
+Asignando caja  a Cliente  4...
+Asignando caja  a Cliente  10...
+Asignando caja  a Cliente  11...
+Asignando caja  a Cliente  12...
+Asignando caja  a Cliente  13...
+Asignando caja  a Cliente  14...
+Asignando caja  a Cliente  8...
+Asignando caja  a Cliente  15...
+Asignando caja  a Cliente  16...
+Asignando caja  a Cliente  17...
+Asignando caja  a Cliente  18...
+Cliente  2 asignado a la caja 2
+Cliente  2: Realizando compra
+Asignando caja  a Cliente  19...
+Cliente  20 asignado a la caja 3
+Cliente  20: Realizando compra
+Asignando caja  a Cliente  7...
+Asignando caja  a Cliente  6...
+Cliente  9 asignado a la caja 4
+Cliente  9: Realizando compra
+Asignando caja  a Cliente  5...
+Asignando caja  a Cliente  3...
+Cliente  4 asignado a la caja 5
+Cliente  4: Realizando compra
+Cliente  4 atendido en la caja 5. Tiempo de espera: 1 ms.
+Cliente  10 asignado a la caja 5
+Cliente  10: Realizando compra
+Cliente  9 atendido en la caja 4. Tiempo de espera: 2 ms.
+Cliente  11 asignado a la caja 4
+Cliente  11: Realizando compra
+Cliente  10 atendido en la caja 5. Tiempo de espera: 1 ms.
+Cliente  12 asignado a la caja 5
+Cliente  12: Realizando compra
+Cliente  2 atendido en la caja 2. Tiempo de espera: 2 ms.
+Cliente  13 asignado a la caja 2
+Cliente  13: Realizando compra
+Cliente  12 atendido en la caja 5. Tiempo de espera: 1 ms.
+Cliente  14 asignado a la caja 5
+Cliente  14: Realizando compra
+Cliente  20 atendido en la caja 3. Tiempo de espera: 4 ms.
+Cliente  8 asignado a la caja 3
+Cliente  8: Realizando compra
+Cliente  1 atendido en la caja 1. Tiempo de espera: 6 ms.
+Cliente  15 asignado a la caja 1
+Cliente  15: Realizando compra
+Cliente  8 atendido en la caja 3. Tiempo de espera: 2 ms.
+Cliente  16 asignado a la caja 3
+Cliente  16: Realizando compra
+Cliente  14 atendido en la caja 5. Tiempo de espera: 3 ms.
+Cliente  17 asignado a la caja 5
+Cliente  17: Realizando compra
+Cliente  11 atendido en la caja 4. Tiempo de espera: 6 ms.
+Cliente  18 asignado a la caja 4
+Cliente  18: Realizando compra
+Cliente  17 atendido en la caja 5. Tiempo de espera: 1 ms.
+Cliente  19 asignado a la caja 5
+Cliente  19: Realizando compra
+Cliente  16 atendido en la caja 3. Tiempo de espera: 1 ms.
+Cliente  7 asignado a la caja 3
+Cliente  7: Realizando compra
+Cliente  13 atendido en la caja 2. Tiempo de espera: 7 ms.
+Cliente  6 asignado a la caja 2
+Cliente  6: Realizando compra
+Cliente  7 atendido en la caja 3. Tiempo de espera: 2 ms.
+Cliente  5 asignado a la caja 3
+Cliente  5: Realizando compra
+Cliente  5 atendido en la caja 3. Tiempo de espera: 0 ms.
+Cliente  3 asignado a la caja 3
+Cliente  3: Realizando compra
+Cliente  15 atendido en la caja 1. Tiempo de espera: 5 ms.
+Cliente  19 atendido en la caja 5. Tiempo de espera: 5 ms.
+Cliente  18 atendido en la caja 4. Tiempo de espera: 6 ms.
+Cliente  6 atendido en la caja 2. Tiempo de espera: 6 ms.
+Cliente  3 atendido en la caja 3. Tiempo de espera: 9 ms.
+
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 4,05ms.
+Desviacion Tipica: 4,76ms.
+
+====SIMULACION 4====
+===== CARRETWO =====
+
+Carretwo abre sus puertas...
+
+Preparando cajas...
+
+Asignando caja  a Cliente  1...
+Asignando caja  a Cliente  3...
+Asignando caja  a Cliente  2...
+Cliente  2 asignado a la caja 3
+Cliente  2: Realizando compra
+Cliente  1 asignado a la caja 1
+Asignando caja  a Cliente  5...
+Asignando caja  a Cliente  4...
+Cliente  3 asignado a la caja 2
+Cliente  3: Realizando compra
+Asignando caja  a Cliente  6...
+Cliente  1: Realizando compra
+Cliente  5 asignado a la caja 4
+Asignando caja  a Cliente  8...
+Cliente  4 asignado a la caja 5
+Cliente  4: Realizando compra
+Asignando caja  a Cliente  7...
+Cliente  5: Realizando compra
+Asignando caja  a Cliente  9...
+Asignando caja  a Cliente  10...
+Asignando caja  a Cliente  11...
+Asignando caja  a Cliente  12...
+Asignando caja  a Cliente  13...
+Asignando caja  a Cliente  14...
+Asignando caja  a Cliente  16...
+Asignando caja  a Cliente  17...
+Asignando caja  a Cliente  18...
+Asignando caja  a Cliente  15...
+Asignando caja  a Cliente  19...
+Asignando caja  a Cliente  20...
+Cliente  4 atendido en la caja 5. Tiempo de espera: 0 ms.
+Cliente  6 asignado a la caja 5
+Cliente  6: Realizando compra
+Cliente  5 atendido en la caja 4. Tiempo de espera: 2 ms.
+Cliente  7 asignado a la caja 4
+Cliente  7: Realizando compra
+Cliente  3 atendido en la caja 2. Tiempo de espera: 3 ms.
+Cliente  9 asignado a la caja 2
+Cliente  9: Realizando compra
+Cliente  1 atendido en la caja 1. Tiempo de espera: 5 ms.
+Cliente  8 asignado a la caja 1
+Cliente  8: Realizando compra
+Cliente  2 atendido en la caja 3. Tiempo de espera: 5 ms.
+Cliente  10 asignado a la caja 3
+Cliente  10: Realizando compra
+Cliente  10 atendido en la caja 3. Tiempo de espera: 1 ms.
+Cliente  11 asignado a la caja 3
+Cliente  11: Realizando compra
+Cliente  11 atendido en la caja 3. Tiempo de espera: 1 ms.
+Cliente  12 asignado a la caja 3
+Cliente  12: Realizando compra
+Cliente  9 atendido en la caja 2. Tiempo de espera: 4 ms.
+Cliente  13 asignado a la caja 2
+Cliente  13: Realizando compra
+Cliente  6 atendido en la caja 5. Tiempo de espera: 8 ms.
+Cliente  14 asignado a la caja 5
+Cliente  14: Realizando compra
+Cliente  7 atendido en la caja 4. Tiempo de espera: 6 ms.
+Cliente  16 asignado a la caja 4
+Cliente  16: Realizando compra
+Cliente  12 atendido en la caja 3. Tiempo de espera: 2 ms.
+Cliente  17 asignado a la caja 3
+Cliente  17: Realizando compra
+Cliente  17 atendido en la caja 3. Tiempo de espera: 1 ms.
+Cliente  18 asignado a la caja 3
+Cliente  18: Realizando compra
+Cliente  8 atendido en la caja 1. Tiempo de espera: 8 ms.
+Cliente  15 asignado a la caja 1
+Cliente  15: Realizando compra
+Cliente  14 atendido en la caja 5. Tiempo de espera: 5 ms.
+Cliente  19 asignado a la caja 5
+Cliente  19: Realizando compra
+Cliente  13 atendido en la caja 2. Tiempo de espera: 6 ms.
+Cliente  20 asignado a la caja 2
+Cliente  20: Realizando compra
+Cliente  18 atendido en la caja 3. Tiempo de espera: 6 ms.
+Cliente  16 atendido en la caja 4. Tiempo de espera: 8 ms.
+Cliente  15 atendido en la caja 1. Tiempo de espera: 5 ms.
+Cliente  19 atendido en la caja 5. Tiempo de espera: 8 ms.
+Cliente  20 atendido en la caja 2. Tiempo de espera: 8 ms.
+
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 5,04ms.
+Desviacion Tipica: 5,72ms.
+
+====SIMULACION 5====
+===== CARRETWO =====
+
+Carretwo abre sus puertas...
+
+Preparando cajas...
+
+Asignando caja  a Cliente  1...
+Cliente  1 asignado a la caja 1
+Cliente  1: Realizando compra
+Asignando caja  a Cliente  2...
+Cliente  2 asignado a la caja 2
+Cliente  2: Realizando compra
+Asignando caja  a Cliente  3...
+Cliente  3 asignado a la caja 3
+Cliente  3: Realizando compra
+Asignando caja  a Cliente  4...
+Cliente  4 asignado a la caja 4
+Cliente  4: Realizando compra
+Asignando caja  a Cliente  5...
+Cliente  5 asignado a la caja 5
+Cliente  5: Realizando compra
+Asignando caja  a Cliente  7...
+Asignando caja  a Cliente  8...
+Asignando caja  a Cliente  6...
+Asignando caja  a Cliente  9...
+Asignando caja  a Cliente  10...
+Asignando caja  a Cliente  11...
+Asignando caja  a Cliente  13...
+Asignando caja  a Cliente  14...
+Asignando caja  a Cliente  12...
+Asignando caja  a Cliente  15...
+Asignando caja  a Cliente  16...
+Asignando caja  a Cliente  17...
+Asignando caja  a Cliente  18...
+Asignando caja  a Cliente  19...
+Asignando caja  a Cliente  20...
+Cliente  2 atendido en la caja 2. Tiempo de espera: 0 ms.
+Cliente  7 asignado a la caja 2
+Cliente  7: Realizando compra
+Cliente  7 atendido en la caja 2. Tiempo de espera: 2 ms.
+Cliente  8 asignado a la caja 2
+Cliente  8: Realizando compra
+Cliente  3 atendido en la caja 3. Tiempo de espera: 2 ms.
+Cliente  6 asignado a la caja 3
+Cliente  6: Realizando compra
+Cliente  1 atendido en la caja 1. Tiempo de espera: 3 ms.
+Cliente  10 asignado a la caja 1
+Cliente  10: Realizando compra
+Cliente  6 atendido en la caja 3. Tiempo de espera: 1 ms.
+Cliente  11 asignado a la caja 3
+Cliente  11: Realizando compra
+Cliente  4 atendido en la caja 4. Tiempo de espera: 6 ms.
+Cliente  9 asignado a la caja 4
+Cliente  9: Realizando compra
+Cliente  9 atendido en la caja 4. Tiempo de espera: 0 ms.
+Cliente  13 asignado a la caja 4
+Cliente  13: Realizando compra
+Cliente  11 atendido en la caja 3. Tiempo de espera: 3 ms.
+Cliente  14 asignado a la caja 3
+Cliente  14: Realizando compra
+Cliente  5 atendido en la caja 5. Tiempo de espera: 8 ms.
+Cliente  12 asignado a la caja 5
+Cliente  12: Realizando compra
+Cliente  8 atendido en la caja 2. Tiempo de espera: 5 ms.
+Cliente  15 asignado a la caja 2
+Cliente  15: Realizando compra
+Cliente  12 atendido en la caja 5. Tiempo de espera: 2 ms.
+Cliente  17 asignado a la caja 5
+Cliente  17: Realizando compra
+Cliente  10 atendido en la caja 1. Tiempo de espera: 8 ms.
+Cliente  16 asignado a la caja 1
+Cliente  16: Realizando compra
+Cliente  14 atendido en la caja 3. Tiempo de espera: 4 ms.
+Cliente  19 asignado a la caja 3
+Cliente  19: Realizando compra
+Cliente  13 atendido en la caja 4. Tiempo de espera: 4 ms.
+Cliente  18 asignado a la caja 4
+Cliente  18: Realizando compra
+Cliente  18 atendido en la caja 4. Tiempo de espera: 3 ms.
+Cliente  20 asignado a la caja 4
+Cliente  20: Realizando compra
+Cliente  17 atendido en la caja 5. Tiempo de espera: 5 ms.
+Cliente  15 atendido en la caja 2. Tiempo de espera: 8 ms.
+Cliente  19 atendido en la caja 3. Tiempo de espera: 4 ms.
+Cliente  16 atendido en la caja 1. Tiempo de espera: 8 ms.
+Cliente  20 atendido en la caja 4. Tiempo de espera: 6 ms.
+
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 4,58ms.
+Desviacion Tipica: 5,22ms.
+
