@@ -5,8 +5,10 @@ import java.io.PrintStream;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicIntegerArray;
 
 import carreTwo.clases.Cliente_UniCola;
+import carreTwo.clases.Cliente_MultiCola;
 
 public class Simulacion {
 
@@ -18,7 +20,7 @@ public class Simulacion {
 		double media_total = 0;
 		double desviacion_tipica = 0;
 
-		System.out.println("===== CARRETWO =====");
+		System.out.println("===== CARRETWO - UNICOLA =====");
 		System.out.println();
 		try {
 			Thread.sleep(2000);
@@ -75,24 +77,88 @@ public class Simulacion {
 
 	}
 
-	public static void main(String[] args) {
+	public static void muchascolasmuchascajas(int nclientes, int ncajas) {
+		Semaphore[] cajas = new Semaphore[ncajas];
+		Thread[] clientes = new Thread[nclientes];
+		long[] tiempos = new long[nclientes];
+		AtomicIntegerArray colas = new AtomicIntegerArray(ncajas);
+		double media_total = 0;
+		double desviacion_tipica = 0;
+
+		System.out.println("===== CARRETWO - MULTICOLA =====");
+		System.out.println();
 
 		try {
-			PrintStream salida = new PrintStream("simulaciones_cola_unica.txt");
-			System.setOut(salida);
-			for (int i = 1; i <= 5; i++) {
-				System.out.printf("====SIMULACION %d====%n", i);
-				unacolamuchascajas(20, 5);
-				System.out.println();
-			}
-
-			salida.close();
-			System.out.println("simulaciones completadas");
-		} catch (FileNotFoundException e) {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
+		System.out.println("Preparando cajas...");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		for (int i = 0; i < cajas.length; i++) {
+			cajas[i] = new Semaphore(1);
+		}
+
+		for (int i = 0; i < nclientes; i++) {
+			clientes[i] = new Thread(new Cliente_MultiCola(i, cajas, colas, tiempos), "Cliente " + (i + 1));
+			clientes[i].start();
+		}
+
+		for (Thread t : clientes) {
+			try {
+				t.join();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
+		int sumatotal = 0;
+
+		for (int i = 0; i < tiempos.length; i++) {
+			sumatotal += tiempos[i];
+		}
+
+		media_total = ((double) sumatotal / nclientes) / 1000;
+
+		double varianza = 0;
+
+		for (int i = 0; i < tiempos.length; i++) {
+			varianza += Math.pow(tiempos[i] - media_total, 2);
+		}
+
+		desviacion_tipica = Math.sqrt(varianza / tiempos.length) / 1000;
+
+		System.out.println();
+		System.out.println("CarreTwo cierra sus puertas");
+		System.out.printf("Tiempo medio de espera: %.2fms.%n", media_total);
+		System.out.printf("Desviacion Tipica: %.2fms.%n", desviacion_tipica);
+
+	}
+
+	public static void main(String[] args) {
+		/*
+		 * try { PrintStream salida = new PrintStream("simulaciones_cola_unica.txt");
+		 * System.setOut(salida); for (int i = 1; i <= 5; i++) {
+		 * System.out.printf("====SIMULACION %d====%n", i); unacolamuchascajas(20, 5);
+		 * System.out.println(); }
+		 * 
+		 * salida.close(); System.out.println("simulaciones completadas"); } catch
+		 * (FileNotFoundException e) { // TODO Auto-generated catch block
+		 * e.printStackTrace(); }
+		 * 
+		 * 
+		 */
+
+		muchascolasmuchascajas(20, 5);
 	}
 
 }

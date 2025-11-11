@@ -22,6 +22,14 @@ public class Cliente_UniCola implements Runnable {
 
 	@Override
 	public void run() {
+
+		try {
+			Thread.sleep(new Random().nextInt(0, 2000));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 		long tInicial = 0;
 		int caja_asignada = 0;
 		System.out.printf("Asignando caja  a %s...%n", Thread.currentThread().getName());

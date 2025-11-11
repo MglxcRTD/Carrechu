@@ -1,6 +1,5 @@
 package carreTwo.clases;
 
-
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicIntegerArray;
@@ -22,6 +21,13 @@ public class Cliente_MultiCola implements Runnable {
 	@Override
 	public void run() {
 
+		try {
+			Thread.sleep(new Random().nextInt(0,2000));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		long tInicial = 0;
 
 		int mejorCaja = 0;
@@ -52,7 +58,7 @@ public class Cliente_MultiCola implements Runnable {
 			this.tiempos[this.id] = totaltiempo;
 
 			System.out.printf("Cliente %d atendido. Tiempo de espera: %d ms%n", id, (totaltiempo / 1000));
-			colas.decrementAndGet(mejorCaja);
+			this.colas.decrementAndGet(mejorCaja);
 			cajas[mejorCaja].release();
 		}
 	}
