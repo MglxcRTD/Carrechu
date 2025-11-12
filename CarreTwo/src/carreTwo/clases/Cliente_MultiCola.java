@@ -22,12 +22,12 @@ public class Cliente_MultiCola implements Runnable {
 	public void run() {
 
 		try {
-			Thread.sleep(new Random().nextInt(0,2000));
+			Thread.sleep(new Random().nextInt(0, 51));
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		long tInicial = 0;
 
 		int mejorCaja = 0;
@@ -48,7 +48,7 @@ public class Cliente_MultiCola implements Runnable {
 			System.out.printf("Cliente %d asignado a caja %d (cola actual: %d clientes)%n", id, mejorCaja, minCola);
 			tInicial = System.currentTimeMillis();
 			System.out.printf("Cliente %d realizando compra en caja %d%n", id, mejorCaja);
-			Thread.sleep(new Random().nextInt(0, 10000));
+			Thread.sleep(new Random().nextInt(0, 51));
 
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -57,7 +57,7 @@ public class Cliente_MultiCola implements Runnable {
 			long totaltiempo = tFinal - tInicial;
 			this.tiempos[this.id] = totaltiempo;
 
-			System.out.printf("Cliente %d atendido. Tiempo de espera: %d ms%n", id, (totaltiempo / 1000));
+			System.out.printf("Cliente %d atendido. Tiempo de espera: %d ms%n", id, totaltiempo);
 			this.colas.decrementAndGet(mejorCaja);
 			cajas[mejorCaja].release();
 		}

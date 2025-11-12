@@ -23,12 +23,12 @@ public class Simulacion {
 		System.out.println("===== CARRETWO - UNICOLA =====");
 		System.out.println();
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(50);
 			System.out.println("Carretwo abre sus puertas...");
-			Thread.sleep(2000);
+			Thread.sleep(50);
 			System.out.println();
 			System.out.println("Preparando cajas...");
-			Thread.sleep(2000);
+			Thread.sleep(50);
 			System.out.println();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -60,7 +60,7 @@ public class Simulacion {
 			sumatotal += tiempos[i];
 		}
 
-		media_total = ((double) sumatotal / nclientes) / 1000;
+		media_total = ((double) sumatotal / nclientes);
 
 		double varianza = 0;
 
@@ -68,7 +68,7 @@ public class Simulacion {
 			varianza += Math.pow(tiempos[i] - media_total, 2);
 		}
 
-		desviacion_tipica = Math.sqrt(varianza / tiempos.length) / 1000;
+		desviacion_tipica = Math.sqrt(varianza / tiempos.length);
 
 		System.out.println();
 		System.out.println("CarreTwo cierra sus puertas");
@@ -89,7 +89,7 @@ public class Simulacion {
 		System.out.println();
 
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(50);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -97,7 +97,7 @@ public class Simulacion {
 
 		System.out.println("Preparando cajas...");
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(50);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -127,7 +127,7 @@ public class Simulacion {
 			sumatotal += tiempos[i];
 		}
 
-		media_total = ((double) sumatotal / nclientes) / 1000;
+		media_total = ((double) sumatotal / nclientes);
 
 		double varianza = 0;
 
@@ -135,7 +135,7 @@ public class Simulacion {
 			varianza += Math.pow(tiempos[i] - media_total, 2);
 		}
 
-		desviacion_tipica = Math.sqrt(varianza / tiempos.length) / 1000;
+		desviacion_tipica = Math.sqrt(varianza / tiempos.length);
 
 		System.out.println();
 		System.out.println("CarreTwo cierra sus puertas");
@@ -145,20 +145,37 @@ public class Simulacion {
 	}
 
 	public static void main(String[] args) {
-		/*
-		 * try { PrintStream salida = new PrintStream("simulaciones_cola_unica.txt");
-		 * System.setOut(salida); for (int i = 1; i <= 5; i++) {
-		 * System.out.printf("====SIMULACION %d====%n", i); unacolamuchascajas(20, 5);
-		 * System.out.println(); }
-		 * 
-		 * salida.close(); System.out.println("simulaciones completadas"); } catch
-		 * (FileNotFoundException e) { // TODO Auto-generated catch block
-		 * e.printStackTrace(); }
-		 * 
-		 * 
-		 */
 
-		muchascolasmuchascajas(20, 5);
+		try {
+			PrintStream salida = new PrintStream("simulaciones_cola_unica.txt");
+			System.setOut(salida);
+			for (int i = 1; i <= 50; i++) {
+				System.out.printf("====SIMULACION %d====%n", i);
+				unacolamuchascajas(500, 10);
+				System.out.println();
+			}
+
+			salida.close();
+			System.out.println("simulaciones completadas");
+		} catch (FileNotFoundException e) { // TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			PrintStream salida = new PrintStream("simulaciones_muchas_colas.txt");
+			System.setOut(salida);
+			for (int i = 1; i <= 50; i++) {
+				System.out.printf("====SIMULACION %d====%n", i);
+				muchascolasmuchascajas(500, 10);
+				System.out.println();
+			}
+
+			salida.close();
+			System.out.println("simulaciones completadas");
+		} catch (FileNotFoundException e) { // TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
 }

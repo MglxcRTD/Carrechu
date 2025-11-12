@@ -1,0 +1,206 @@
+Simulacion1:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,50ms.
+Desviacion Tipica: 14,72ms.
+Simulacion2:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,95ms.
+Desviacion Tipica: 14,43ms.
+Simulacion3:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,11ms.
+Desviacion Tipica: 15,01ms.
+Simulacion4:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,95ms.
+Desviacion Tipica: 15,28ms.
+Simulacion5:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,44ms.
+Desviacion Tipica: 15,01ms.
+Simulacion6:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,82ms.
+Desviacion Tipica: 14,93ms.
+Simulacion7:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,85ms.
+Desviacion Tipica: 14,88ms.
+Simulacion8:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,84ms.
+Desviacion Tipica: 15,13ms.
+Simulacion9:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 27,57ms.
+Desviacion Tipica: 15,16ms.
+Simulacion10:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,81ms.
+Desviacion Tipica: 14,62ms.
+Simulacion11:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,92ms.
+Desviacion Tipica: 14,96ms.
+Simulacion12:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,81ms.
+Desviacion Tipica: 14,53ms.
+Simulacion13:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,25ms.
+Desviacion Tipica: 14,99ms.
+Simulacion14:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,54ms.
+Desviacion Tipica: 14,57ms.
+Simulacion15:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,82ms.
+Desviacion Tipica: 14,90ms.
+Simulacion16:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,95ms.
+Desviacion Tipica: 15,08ms.
+Simulacion17:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,06ms.
+Desviacion Tipica: 14,31ms.
+Simulacion18:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,74ms.
+Desviacion Tipica: 15,05ms.
+Simulacion19:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,10ms.
+Desviacion Tipica: 14,94ms.
+Simulacion20:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 27,09ms.
+Desviacion Tipica: 14,52ms.
+Simulacion21:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,19ms.
+Desviacion Tipica: 14,80ms.
+Simulacion22:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,49ms.
+Desviacion Tipica: 15,07ms.
+Simulacion23:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,83ms.
+Desviacion Tipica: 14,53ms.
+Simulacion24:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,14ms.
+Desviacion Tipica: 15,01ms.
+Simulacion25:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,82ms.
+Desviacion Tipica: 15,19ms.
+Simulacion26:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,55ms.
+Desviacion Tipica: 14,79ms.
+Simulacion27:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,77ms.
+Desviacion Tipica: 14,72ms.
+Simulacion28:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,26ms.
+Desviacion Tipica: 14,49ms.
+Simulacion29:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,08ms.
+Desviacion Tipica: 14,80ms.
+Simulacion30:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,68ms.
+Desviacion Tipica: 14,69ms.
+Simulacion31:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,69ms.
+Desviacion Tipica: 14,87ms.
+Simulacion32:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,90ms.
+Desviacion Tipica: 14,59ms.
+Simulacion33:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,18ms.
+Desviacion Tipica: 14,63ms.
+Simulacion34:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,75ms.
+Desviacion Tipica: 14,56ms.
+Simulacion35:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,67ms.
+Desviacion Tipica: 15,01ms.
+Simulacion36:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,16ms.
+Desviacion Tipica: 14,92ms.
+Simulacion37:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,75ms.
+Desviacion Tipica: 14,41ms.
+Simulacion38:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,93ms.
+Desviacion Tipica: 13,87ms.
+Simulacion39:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,15ms.
+Desviacion Tipica: 14,68ms.
+Simulacion40:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,12ms.
+Desviacion Tipica: 15,18ms.
+Simulacion41:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,50ms.
+Desviacion Tipica: 14,93ms.
+Simulacion42:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,12ms.
+Desviacion Tipica: 14,19ms.
+Simulacion43:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,63ms.
+Desviacion Tipica: 14,35ms.
+Simulacion44:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,71ms.
+Desviacion Tipica: 14,63ms.
+Simulacion45:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 27,25ms.
+Desviacion Tipica: 14,66ms.
+Simulacion46:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,94ms.
+Desviacion Tipica: 14,78ms.
+Simulacion47:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 25,45ms.
+Desviacion Tipica: 14,29ms.
+Simulacion48:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,33ms.
+Desviacion Tipica: 14,81ms.
+Simulacion49:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 26,51ms.
+Desviacion Tipica: 15,03ms.
+Simulacion50:
+CarreTwo cierra sus puertas
+Tiempo medio de espera: 27,23ms.
+Desviacion Tipica: 15,06ms.
+
+===============================
+===============================
+
+MEDIA TOTAL: 26,198ms
+DESVIACION TIPICA ESTANDAR: 0,573ms

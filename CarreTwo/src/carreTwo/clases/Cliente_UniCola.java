@@ -24,7 +24,7 @@ public class Cliente_UniCola implements Runnable {
 	public void run() {
 
 		try {
-			Thread.sleep(new Random().nextInt(0, 2000));
+			Thread.sleep(new Random().nextInt(0, 51));
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -41,7 +41,7 @@ public class Cliente_UniCola implements Runnable {
 			System.out.printf("%s asignado a la caja %d%n", Thread.currentThread().getName(), caja_asignada);
 			tInicial = System.currentTimeMillis();
 			System.out.printf("%s: Realizando compra%n", Thread.currentThread().getName());
-			Thread.sleep(new Random().nextInt(0, 10000));
+			Thread.sleep(new Random().nextInt(0, 51));
 
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -53,7 +53,7 @@ public class Cliente_UniCola implements Runnable {
 			this.tiempos[this.id] = totaltiempo;
 
 			System.out.printf("%s atendido en la caja %d. Tiempo de espera: %d ms.%n", Thread.currentThread().getName(),
-					caja_asignada, (totaltiempo / 1000));
+					caja_asignada, totaltiempo);
 
 			this.cajas_libres.add(caja_asignada);
 			this.cajas_disponibles.release();
