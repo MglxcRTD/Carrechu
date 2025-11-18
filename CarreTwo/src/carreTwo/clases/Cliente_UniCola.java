@@ -7,7 +7,7 @@ import java.util.concurrent.Semaphore;
 public class Cliente_UniCola implements Runnable {
 
 	private int id;
-	private long[] tiempos;
+	private final long[] tiempos;
 	private final Semaphore cajas_disponibles;
 	private final Queue<Integer> cajas_libres;
 
@@ -50,7 +50,9 @@ public class Cliente_UniCola implements Runnable {
 
 			long tFinal = System.currentTimeMillis();
 			long totaltiempo = tFinal - tInicial;
-			this.tiempos[this.id] = totaltiempo;
+			synchronized (this.tiempos) {
+				this.tiempos[this.id] = totaltiempo;
+			}
 
 			System.out.printf("%s atendido en la caja %d. Tiempo de espera: %d ms.%n", Thread.currentThread().getName(),
 					caja_asignada, totaltiempo);

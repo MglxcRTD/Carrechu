@@ -145,8 +145,10 @@ public class Simulacion {
 	}
 
 	public static void main(String[] args) {
-
-		try {
+		unacolamuchascajas(50, 5);
+		
+/*
+ * try {
 			PrintStream salida = new PrintStream("simulaciones_cola_unica.txt");
 			System.setOut(salida);
 			for (int i = 1; i <= 50; i++) {
@@ -178,4 +180,8 @@ public class Simulacion {
 
 	}
 
+
+
+ */
+	}
 }

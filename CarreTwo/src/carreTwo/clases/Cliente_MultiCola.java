@@ -55,7 +55,9 @@ public class Cliente_MultiCola implements Runnable {
 		} finally {
 			long tFinal = System.currentTimeMillis();
 			long totaltiempo = tFinal - tInicial;
-			this.tiempos[this.id] = totaltiempo;
+			synchronized (this.tiempos) {
+				this.tiempos[this.id] = totaltiempo;
+			}
 
 			System.out.printf("Cliente %d atendido. Tiempo de espera: %d ms%n", id, totaltiempo);
 			this.colas.decrementAndGet(mejorCaja);
