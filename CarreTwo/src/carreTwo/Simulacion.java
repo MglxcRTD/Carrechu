@@ -78,56 +78,38 @@ public class Simulacion {
 	}
 
 	public static void muchascolasmuchascajas(int nclientes, int ncajas) {
-		Semaphore[] cajas = new Semaphore[ncajas];
-		Thread[] clientes = new Thread[nclientes];
-		long[] tiempos = new long[nclientes];
-		AtomicIntegerArray colas = new AtomicIntegerArray(ncajas);
-		double media_total = 0;
-		double desviacion_tipica = 0;
+	    Semaphore[] cajas = new Semaphore[ncajas];
+	    Thread[] clientes = new Thread[nclientes];
+	    long[] tiempos = new long[nclientes];
+	    AtomicIntegerArray colas = new AtomicIntegerArray(ncajas);
 
-		System.out.println("===== CARRETWO - MULTICOLA =====");
-		System.out.println();
+	    System.out.println("===== CARRETWO - MULTICOLA =====");
+	    System.out.println("Preparando cajas...");
 
-		try {
-			Thread.sleep(50);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	    for (int i = 0; i < cajas.length; i++) {
+	        cajas[i] = new Semaphore(1);
+	    }
 
-		System.out.println("Preparando cajas...");
-		try {
-			Thread.sleep(50);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	    for (int i = 0; i < nclientes; i++) {
+	        clientes[i] = new Thread(new Cliente_MultiCola(i, cajas, colas, tiempos), "Cliente " + (i + 1));
+	        clientes[i].start();
+	    }
 
-		for (int i = 0; i < cajas.length; i++) {
-			cajas[i] = new Semaphore(1);
-		}
-
-		for (int i = 0; i < nclientes; i++) {
-			clientes[i] = new Thread(new Cliente_MultiCola(i, cajas, colas, tiempos), "Cliente " + (i + 1));
-			clientes[i].start();
-		}
-
-		for (Thread t : clientes) {
-			try {
-				t.join();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-
-		int sumatotal = 0;
+	    for (Thread t : clientes) {
+	        try {
+	            t.join();
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	    
+	    int sumatotal = 0;
 
 		for (int i = 0; i < tiempos.length; i++) {
 			sumatotal += tiempos[i];
 		}
 
-		media_total = ((double) sumatotal / nclientes);
+		double media_total = ((double) sumatotal / nclientes);
 
 		double varianza = 0;
 
@@ -135,25 +117,32 @@ public class Simulacion {
 			varianza += Math.pow(tiempos[i] - media_total, 2);
 		}
 
-		desviacion_tipica = Math.sqrt(varianza / tiempos.length);
+		double desviacion_tipica = Math.sqrt(varianza / tiempos.length);
 
 		System.out.println();
 		System.out.println("CarreTwo cierra sus puertas");
 		System.out.printf("Tiempo medio de espera: %.2fms.%n", media_total);
 		System.out.printf("Desviacion Tipica: %.2fms.%n", desviacion_tipica);
 
+
+	    System.out.print("Estado final de las colas: [");
+	    for (int i = 0; i < colas.length(); i++) {
+	        System.out.print(colas.get(i));
+	        if (i < colas.length() - 1) System.out.print(", ");
+	    }
+	    System.out.println("]");
 	}
 
+
 	public static void main(String[] args) {
-		unacolamuchascajas(50, 5);
 		
-/*
- * try {
+
+		try {
 			PrintStream salida = new PrintStream("simulaciones_cola_unica.txt");
 			System.setOut(salida);
-			for (int i = 1; i <= 50; i++) {
+			for (int i = 1; i <= 2; i++) {
 				System.out.printf("====SIMULACION %d====%n", i);
-				unacolamuchascajas(500, 10);
+				unacolamuchascajas(20, 4);
 				System.out.println();
 			}
 
@@ -166,7 +155,7 @@ public class Simulacion {
 		try {
 			PrintStream salida = new PrintStream("simulaciones_muchas_colas.txt");
 			System.setOut(salida);
-			for (int i = 1; i <= 50; i++) {
+			for (int i = 1; i <= 2; i++) {
 				System.out.printf("====SIMULACION %d====%n", i);
 				muchascolasmuchascajas(500, 10);
 				System.out.println();
@@ -180,8 +169,4 @@ public class Simulacion {
 
 	}
 
-
-
- */
-	}
 }
